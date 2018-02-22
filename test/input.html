@@ -1,0 +1,118 @@
+<!-- 表单就是收集用户信息的，让用户选择的 -->
+<!-- 所有的表单内容都要写在 form 标签里头 -->
+<!-- form 是英语表单的意思 -->
+<!-- form 标签里有 action 和 method 属性  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单学习</title>
+</head>
+<body>
+    
+</body>
+
+    <div>
+        <h3>欢迎注册本网站</h3>
+        <!-- action 表示表单提交到哪里 -->
+        <!-- method 表示属性用什么 HTTP 方法提交，有 get、post 两种提交方式 -->
+        <form action="div_span.html">
+            <p>
+                请输入您的姓名：
+                <!-- input 表示输入，指的是输入控件 -->
+                <!-- type 表示类型 -->
+                <!-- text 表示类型是一个文本框，输入小控件 -->
+                <!-- value 表示的是默认有的值，文本框已经被填写好了 -->
+                <!-- input 是一个自封闭控件 -->
+                <!-- 自封闭控件有：
+                     <meta name="Keywords" content="" /> 
+                     <img src="" alt="" />
+                     <input type="" /> -->
+                <input type="text" value="请输入姓名"/>
+            </p>
+            <p>
+                请输入您的密码：
+                <!-- 密码框 -->
+                <input type="password"/>
+            </p>
+
+            <p>
+                请选择您的性别：
+                <!-- 单选框 -->
+                <!-- radio 是单选按钮 -->
+                <!-- 单选按钮天生是不能互斥的，如果想互斥，必须有一样的 name 名字 -->
+                <!-- 使用 label 标签，若 label 标签的 for 与 input 标签的 id 一致，直接点字，Button 就有反应 -->
+                <!-- label 的作用就是绑定两个元素 -->
+                <input type="radio" name="sex" id="nan"/> <label for="nan">男</label>
+                <input type="radio" name="sex" id="nv"/> <label for="nv">女</label>
+            </p>
+
+            <p>
+                请选择您的学历：
+                <input type="radio" name="xueli" /> 小学
+                <input type="radio" name="xueli" /> 初中
+                <input type="radio" name="xueli" /> 高中
+                <input type="radio" name="xueli" /> 本科
+            </p>
+
+            <p>
+                请选择您的爱好： 
+                <!-- 复选框 -->
+                <!-- 最好也要有相同的 name ，虽然不需要互斥 -->
+                <input type="checkbox" name="fuxuankuang" /> 旅游
+                <input type="checkbox" name="fuxuankuang" /> 足球
+                <input type="checkbox" name="fuxuankuang" /> 篮球
+                <input type="checkbox" name="fuxuankuang" /> 乒乓球
+            </p>
+
+            <p>
+                请选择您的籍贯：
+                <!-- 下拉列表框 -->
+                <!-- select : 选项 option： 选择 -->
+                <!-- select 和 ul、ol、dl 一样，都是组标签 -->
+                <select>
+                    <option>北京</option>
+                    <option>山东</option>
+                    <option>山西</option>
+                    <option>四川</option>
+                    <option>重庆</option>
+                </select>
+            </p>
+
+            <p>
+                签名：
+                <!-- 多行文本框（文本域） -->
+                <!-- text ： 文本 area: 文本域 -->
+                <!-- 这个标签是个标签对儿，这个标签里面不写任何东西，若写了，就是这个框的默认文字 -->
+                <!-- cols 表示 columns（列） rows(行) 他们的值是一个数字，表示多少列多少行 -->
+                <textarea cols="80" rows="4ß"></textarea>
+            </p>
+
+            <p>
+                普通按钮：
+                <!-- value 是按钮上面的文字 -->
+                <input type="button" value="普通按钮" />
+            </p>
+
+            <p>
+                提交按钮：
+                <!-- submit 就是提交的意思，这个按钮真的能提交，如果点击提交，那么这个表单就会被提交到 form 标签的 action 属性中的那个页面 -->
+                <input type="submit" value="确定提交" />
+            </p>
+
+            <p>
+                重置按钮：
+                <!-- reset 复位 -->
+                <input type="reset" />
+            </p>
+        </form>
+        <!-- &lt; : < 小于符号的字符实体，就是用常用字符来表示这些符号的方式  -->
+        <!-- lt: less than 小于的意思 -->
+        <!-- &gt; : > 大于符号的字符实体 -->
+        <!-- &copy; : 版权符号 © -->
+        <!-- &nbsp; : 空格 -->
+        好高兴啊，今天学习了&lt;h1>标签   &copy;
+    </div>
+</html>

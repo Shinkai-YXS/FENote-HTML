@@ -1,0 +1,66 @@
+<!-- 定义列表 -->
+<!-- 
+    定义列表也是组标签
+    dl: definition list(定义列表)
+    dt: definition title(定：义标题)
+    dd: definition descripition(定义表述)
+    表达语义：
+    1、是一个列表
+    2、每一个词儿都有自己的描述项
+        dd 是描述 dt 的
+    用法灵活：可以用一个 dt 配对很多 dd 
+            还可以拆开用 
+    dt 和 dd 都是容器级标签，想放什么都可以
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <dl>
+        <dt>北京</dt>
+        <dd>首都，政治文化中心</dd>
+        <dd>污染很严重</dd>
+        <dt>广州</dt>
+        <dd>中国南大门，有珠江，小蛮腰</dd>
+    </dl>
+
+
+    <!-- 让每一个 dl 只包含一个 dt 和 dd -->
+    <dl>
+        <dt>北京</dt>
+        <dd>首都，政治文化中心</dd>
+        <dd>污染很严重</dd>
+    </dl>
+            
+    <dl>
+        <dt>广州</dt>
+        <dd>中国南大门，有珠江，小蛮腰</dd>
+    </dl>
+
+
+    <dl>
+        <dt> 
+            啦啦啦啦
+            <ol>
+                <li>童话镇</li>
+                <li>童话</li>
+                <li>后来</li>
+                <li>会痛的石头</li>
+            </ol>
+        </dt>
+        <dd>
+            <ol>
+                <li>童话镇</li>
+                <li>童话</li>
+                <li>后来</li>
+                <li>会痛的石头</li>
+            </ol>
+        </dd>
+    </dl>
+</body>
+</html>
